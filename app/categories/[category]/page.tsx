@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { allPosts } from "contentlayer/generated"
 import { format, parseISO } from "date-fns"
-import { ArrowRightIcon, ChevronLeftSquare } from "lucide-react"
+import { ArrowRightIcon, ChevronLeft } from "lucide-react"
 
 import {
   Card,
@@ -40,7 +40,7 @@ export default async function CategoryPostsPage({ params }: PostProps) {
     <div className="space-y-12">
       <header className="flex items-center space-x-2">
         <Link href="/">
-          <ChevronLeftSquare className="h-6 w-6" />
+          <ChevronLeft className="size-6" />
         </Link>
         <h1 className="text-3xl">
           <span className="font-semibold">{posts[0].category}</span> blog posts
@@ -92,7 +92,7 @@ export default async function CategoryPostsPage({ params }: PostProps) {
                 className="inline-flex items-center space-x-2 rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white no-underline hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 <span>Read more</span>
-                <ArrowRightIcon className="h-5 w-5" />
+                <ArrowRightIcon className="size-5" />
               </Link>
             </CardFooter>
           </Card>

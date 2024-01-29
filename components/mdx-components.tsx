@@ -1,8 +1,10 @@
-import Image from "next/image"
+import Image, { ImageProps } from "next/image"
 import { useMDXComponent } from "next-contentlayer/hooks"
 
 const mdxComponents = {
-  Image,
+  Image: (props: ImageProps) => (
+    <Image {...props} alt={props.alt ?? "No alt provided"} />
+  ),
 }
 
 interface MdxProps {
