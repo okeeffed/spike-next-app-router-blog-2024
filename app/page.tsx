@@ -47,7 +47,7 @@ export default function Home() {
                     href={`/categories/${encodeURIComponent(
                       post.category.toLowerCase()
                     )}`}
-                    className="underline underline-offset-2"
+                    className="underline-offset-2 hover:underline"
                   >
                     {post.category}
                   </Link>
@@ -58,10 +58,10 @@ export default function Home() {
             <CardFooter>
               <Link
                 href={post.slug}
-                className="inline-flex items-center space-x-2 rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white no-underline hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="inline-flex items-center space-x-2 rounded-lg text-center text-sm font-medium text-blue-700 no-underline hover:text-blue-900 hover:underline focus:outline-none focus:ring-4 focus:ring-blue-300 dark:text-white dark:hover:text-gray-300"
               >
                 <span>Read more</span>
-                <ArrowRightIcon className="h-5 w-5" />
+                <ArrowRightIcon className="size-5" />
               </Link>
             </CardFooter>
           </Card>

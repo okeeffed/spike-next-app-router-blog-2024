@@ -78,7 +78,7 @@ export default async function CategoryPostsPage({ params }: PostProps) {
                     href={`/categories/${encodeURIComponent(
                       post.category.toLowerCase()
                     )}`}
-                    className="underline underline-offset-2"
+                    className="underline-offset-2 hover:underline"
                   >
                     {post.category}
                   </Link>

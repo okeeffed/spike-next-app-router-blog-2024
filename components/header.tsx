@@ -24,19 +24,19 @@ export function Header() {
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
-              <MenuIcon className="h-5 w-5" />
+              <MenuIcon className="size-5" />
             </button>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <Link href="/" className="text-3xl font-black">
+              <Link href="/" className="text-3xl font-black hover:underline">
                 {process.env.NEXT_PUBLIC_SITE_NAME}
               </Link>
             </div>
-            <div className="hidden sm:ml-12 sm:flex sm:items-center">
+            <div className="hidden sm:ml-8 sm:flex sm:items-center">
               <div className="space-x-6 text-sm font-medium">
-                <Link href="/">Home</Link>
-                <Link href="/about">About</Link>
+                <Link href="/" className="hover:underline">Home</Link>
+                <Link href="/about" className="hover:underline">About</Link>
               </div>
             </div>
           </div>
