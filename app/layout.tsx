@@ -6,9 +6,9 @@ import "./globals.css"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 
-const title = "Next Dev Blog"
+const title = "workingoutloud.dev"
 const description =
-  "A Next.js markdown blog for developers using the new App Router."
+  "A blog geared towards shipping #workingoutloud #buildinpublic"
 export const metadata = {
   metadataBase: process.env.NEXT_PUBLIC_SITE_URL,
   title: {
