@@ -27,14 +27,9 @@ export const metadata = {
   ],
   authors: [
     {
-      name: "stevenspads",
-      url: "https://github.com/stevenspads",
+      name: "Dennis O'Keeffe",
+      url: "https://github.com/okeeffed",
     },
-  ],
-  creator: "stevenspads",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   openGraph: {
     type: "website",
@@ -49,7 +44,7 @@ export const metadata = {
     title,
     description,
     images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-image.jpg`],
-    creator: "@stevenspads",
+    creator: "@dennisokeeffe92",
   },
   icons: {
     icon: "/favicon.ico",
