@@ -17,13 +17,11 @@ export const metadata = {
   },
   description,
   keywords: [
-    "Next.js",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "TailwindCSS",
-    "contentlayer",
-    "App Router",
+    "Build in public",
+    "Working out loud",
+    "Indie hacker",
+    "Developer",
+    "Product development"
   ],
   authors: [
     {
@@ -33,7 +31,7 @@ export const metadata = {
   ],
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_AU",
     url: process.env.NEXT_PUBLIC_SITE_URL,
     title,
     description,
