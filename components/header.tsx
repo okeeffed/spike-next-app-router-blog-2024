@@ -5,6 +5,7 @@ import Link from "next/link"
 import { MenuIcon } from "lucide-react"
 
 import { ThemeSwitcher } from "./theme-switcher"
+import Image from 'next/image'
 
 export function Header() {
   const [isMobileOpen, setIsMobileOpen] = useState(false)
@@ -28,15 +29,18 @@ export function Header() {
             </button>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex shrink-0 items-center">
-              <Link href="/" className="text-3xl font-black hover:underline">
-                {process.env.NEXT_PUBLIC_SITE_NAME}
+            
+            <div className="flex shrink-0 items-center space-x-2">
+              <Link href="/" className="text-3xl font-black ">
+                
+                <Image className="rounded-full" src="/logo.png" alt="Working Out Loud logo" width={96} height={96} />
+                {/* {process.env.NEXT_PUBLIC_SITE_NAME} */}
               </Link>
             </div>
             <div className="hidden sm:ml-8 sm:flex sm:items-center">
               <div className="space-x-6 text-sm font-medium">
-                <Link href="/" className="hover:underline">Home</Link>
-                <Link href="/about" className="hover:underline">About</Link>
+                <Link href="/" className="font-bold hover:underline">Home</Link>
+                <Link href="/about" className="font-bold  hover:underline">About</Link>
               </div>
             </div>
           </div>
